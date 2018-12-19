@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>GUANABARA</title>
+    <meta charset="utf-8"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.theme.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+        <style>
+            .ui-widget {
+                font-size: 80% !important;
+            }
+        </style>
+    </head>
+
+<body>
+   
+<div id="msgExcluir">
+  Deseja realmente limpar os dados?
+</div>
+
+    <script type="text/javascript">
+        var msgExcluir = $("#msgExcluir");
+            msgExcluir.dialog({
+                modal: true,
+                buttons: {
+                      "Sim": function () {
+                       alert("Excluido com Sucesso");
+               $(this).dialog('close');
+             },
+                   "Não": function () {
+              $(this).dialog('close');
+            },
+            "You is dumb man????": function () {
+                      // alert("You is dumb man????");
+                       console.log("You is dumb man????");
+               window.location.reload();
+            }
+  }
+});
+    </script>
+
+</body>
+</html>

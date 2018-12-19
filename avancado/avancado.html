@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <Title>Curso JS AVANCADO - BONIEKY</Title>
+        <meta charset="utf-8"/>        
+        <script type="text/javascript" src="avancado.js"></script>
+
+        <!--JOGO ESTOURAR BALOES
+        <style type="text/css">
+            .bola {
+                width:50px;
+                height:50px;
+                background-color:#000000;
+                border-radius:25px;
+                position:absolute;
+            }-->
+        </style>
+    </head>
+
+    <!--body onLoad="iniciar()"> estourar baloes-->
+          
+    <!--body onLoad="carregou()" onunload="paginafechada()"> Eventos de Pagians-->
+
+        <!--h3>Eventos de Mouse</h3-->
+        <!--button 
+        onMouseDown="apertouMouse()" onMouseUp="soltouMouse()"
+        onMouseOver="mouseEmCima()" onMouseOut="mouseSaiuDeCima()" onMouseMove="mouseFoiMovido()"
+        >EU SOU UM BUTTON</button-->
+
+        <!--button 
+        onclick="clicou()" onContextMenu="return clicouDireito()" onDblClick="clickDuplo()"
+        >EU SOU UM BUTTON</button-->
+
+        <!--h3>Eventos de Teclado</h3>
+
+            <input type="text" onKeyDown="apertouTecla(event)" />  executa automaticamente (no ato, quando aperado o button) >
+            <input type="text" onKeyUp="apertouTecla(event)"  />  Só executa quando soltado o button | não conta caractere repetida >
+            <input type="text" onKeyPress="apertouTecla(event)" />  Se ficar segurando, ele conta cada caractere repetida >
+
+            <input type="text" onkeyup="apertouTecla2(event)"/>
+        -->
+
+       <!--h3>Eventos de Página</h3-->
+
+       <!--h3>Eventos de Formulários</h3-->
+
+       <!--exemplo do evento onchange
+        <form method="POST">
+
+            <input type="text" name="Nome"/> <br/><br/>
+
+            <select name="cidade" onchange="mudouOpcao(this)">
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Belo Horizonte</option>
+                <option>Recife</option>                
+            </select> <br/><br/>
+
+            <input type="submit" value="Enviar" />
+        </form>
+        -->
+
+      <!--Exemplo do evento onfocus e onblur 
+      
+      <form method="POST"> 
+       <form method="POST" onsubmit="return false">  
+        EVENTO ONSUBMIT, BLOQUEIA O FORM DE ENVIAR                      
+
+            <input type="text" name="Nome" onfocus="focou()" onblur="desfocou()" /> <br/><br/>
+
+            <select name="cidade" onchange="mudouOpcao(this)">
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Belo Horizonte</option>
+                <option>Recife</option>                
+            </select> <br/><br/>
+
+            <input type="submit" value="Enviar" />
+        </form>
+-->
+
+    <!-- Jogo Estourar Balões -->
+     
+    <form method="POST" onsubmit="return validar()">
+        <h3>Digite um número de 2 algarismos:</h3><br/>
+        <input id="numero" type="text" name="numero" /> <br/><br/>
+        <input type="submit" value="Enviar" />
+    </form>
+
+ </body>
+</html>
